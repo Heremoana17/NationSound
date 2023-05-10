@@ -1,0 +1,101 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	<main>
+		<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active" style="height:600px">
+					<img src="{{asset('img/home1.jpg')}}" class="d-block w-100" style="" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>First slide label</h5>
+						<p>Some representative placeholder content for the first slide.</p>
+					</div>
+				</div>
+				<div class="carousel-item" style="height:600px">
+					<img src="{{asset('img/paris.jpg')}}" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>second slide label</h5>
+						<p>Some representative placeholder content for the first slide.</p>
+					</div>
+				</div>
+				<div class="carousel-item" style="height:600px">
+					<img src="{{asset('img/remerciment1.jpg')}}" class="d-block w-100" alt="...">
+					<div class="carousel-caption d-none d-md-block">
+						<h5>third slide label</h5>
+						<p>Some representative placeholder content for the first slide.</p>
+					</div>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Next</span>
+			</button>
+		</div>
+		<article class="d-flex mt-5 mx-3">
+			<section class="col-6 px-3">
+				<h2 class="h1 my-2" style="text-align:center">Titre 1</h2>
+				<p class="textarticle1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima voluptate labore repellendus eos sapiente totam voluptas! Porro eius expedita reprehenderit error impedit veritatis quaerat incidunt hic libero quis facere aperiam illo beatae qui dolorum sit quasi commodi maxime voluptatum, repellendus tempore consectetur soluta officia. Facere, quidem dolorum! Blanditiis labore perferendis repellendus, ullam quo a deleniti fuga dicta eaque similique veniam, ex velit repudiandae saepe quod? Nisi, sit, hic deleniti ipsa dolore, iure ex libero praesentium sed ullam itaque perferendis omnis! Illo officia voluptate voluptatem eveniet minus. Amet nam reiciendis voluptas maiores id doloremque mollitia expedita eum? Consectetur optio culpa minima?</p>
+				<button type="button" class="btn btn-primary btn-lg">click ici</button>
+			</section>
+			<section class="col-6 d-flex justify-content-around ">
+				<div class="mx-2 col-3 bgimg1"></div>
+				<div class="mx-2 col-3 bgimg2"></div>
+				<div class="mx-2 col-3 bgimg3"></div>
+			</section>
+		</article>
+		<article class="mt-5 mx-3">
+			<h2 class="h1 my-3 mx-3" style="text-align:center">Titre 2</h2>
+			<section class="d-flex justify-content-around ">
+				<div class="card" style="width: 18rem;">
+					<img src="{{asset('img/remerciment1.jpg')}}" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<img src="{{asset('img/hotel.jpg')}}" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<img src="{{asset('img/restaurant.jpg')}}" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					</div>
+				</div>
+				<div class="card" style="width: 18rem;">
+					<img src="{{asset('img/restaurant.jpg')}}" class="card-img-top" alt="...">
+					<div class="card-body">
+						<h5 class="card-title">Card title</h5>
+						<p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere eos ab nam error aliquid quis velit provident beatae? Consectetur eius excepturi vero beatae distinctio quis.</p>
+					</div>
+				</div>
+			</section>
+		</article>
+		<article class="article3 text-white fs-3 fst-italic">
+			<section class="offset-1 col-6 text-start">
+				<p class="textArt3  ">"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque magni modi laborum libero consectetur amet!."</p>
+			</section>
+		</article>
+		<article class="article4 text-white pt-5 d-flex flex-column align-items-center justify-content-center">
+			<h3 class="h1">Dernier titre de la page</h3>
+			<p class="col-8 text-center">ceci est un text de test Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quod ea quibusdam esse vitae rem. Consequuntur adipisci cupiditate voluptates tempore animi facilis optio numquam commodi minima maiores facere placeat soluta rerum dolorem sequi possimus quis ipsam, esse ratione! Fugiat eum explicabo porro voluptate aperiam itaque aut nobis nulla omnis vero?</p>
+		</article>
+	</main>
+{% endblock %}

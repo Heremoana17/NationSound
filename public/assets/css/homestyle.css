@@ -1,0 +1,46 @@
+.bgimg1{
+    background-image: url("../../img/artiste1.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 80px;
+}
+.bgimg2{
+    background-image: url("../../img/artiste2.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 300px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+.bgimg3{
+    background-image: url("../../img/artiste3.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 300px;
+}
+.textarticle1{
+    text-align: justify;
+}
+.article3{
+    background-image: url("../../img/remerciment1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    height: 500px;
+    margin: 50px 70px;
+    border-radius: 15px;
+}
+.textArt3{
+    padding-top: 200px;
+}
+.article4{
+    background-image: url("../../img/article4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 80%;
+    height: 550px;
+}
