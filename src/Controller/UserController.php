@@ -4,10 +4,12 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Event\ListAllPersonneEvent;
+use App\Form\RegistrationFormType;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
@@ -19,6 +21,36 @@ class UserController extends AbstractController
     {
         
     }
+    #[Route('/edit/{id?0}', name:'app_user.edit')]
+    public function userEdit(User $user=null, ManagerRegistry $doctrine, Request $request, ): Response {
+        $new=false;
+        if(!$user){
+            $new=true;
+            $user = new User();
+        }
+        $form=$this->createForm(RegistrationFormType::class, $user);
+        $form->remove('createdAt');
+        $form->remove('updatedAt');
+        $form->handleRequest($request);
+        if($form->isSubmitted() && $form->isValid()){
+            if($new){
+                $message = ' a personne a bien été ajouter';
+            }else{
+                $message = ' a personne a bien été mis à jour';
+            }
+            $manager=$doctrine->getManager();
+            $user = $form->getData();
+            $manager->persist($user);
+            $manager->flush();
+            $this->addFlash("success", $user->getName().$message);
+            return $this->redirectToRoute('app_user');
+        }else{
+            return $this->render('user/edit.html.twig', [
+                'formulaire' => $form->createView()
+            ]);
+        }
+    }
+    
     #[Route('/delete/{id<\d+>}', name:'app_user.delete'),]
     public function userDelete(ManagerRegistry $doctrine, User $user=null): RedirectResponse
     {

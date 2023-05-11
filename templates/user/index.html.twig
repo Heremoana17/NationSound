@@ -55,8 +55,8 @@
 								{{user.email}}</span>
 						</h6>
 					</section>
-					<a href="" class="btn btn-primary mt-2">modifier</a>
-					<a href="{{path('app_user.delete', {id:user.id})}}" class="btn btn-primary mt-2">supprimer</a>
+					<a href="{{path('app_user.edit', {id:user.id})}}" class="btn btn-primary mt-2">modifier</a>
+					<a href="{{path('app_user.delete', {id:user.id})}}" class="btn btn-danger mt-2">supprimer</a>
 				</div>
 			</div>
 		{% endfor %}
