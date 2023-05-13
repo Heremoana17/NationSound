@@ -5,6 +5,7 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Event\ListAllPersonneEvent;
 use App\Form\RegistrationFormType;
+use App\Services\GetUserService;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
@@ -14,15 +15,22 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
 
-#[Route("/user"), IsGranted("ROLE_ADMIN")]
+#[Route("/user")]
 class UserController extends AbstractController
 {
     public function __construct(private EventDispatcherInterface $dispatcher)
     {
         
     }
+
+    #[Route('/details', name:"app_user.details")]
+    public function userDetails():Response {
+        return $this->render("user/detail.html.twig",[
+        ]);
+    }
+
     #[Route('/edit/{id?0}', name:'app_user.edit')]
-    public function userEdit(User $user=null, ManagerRegistry $doctrine, Request $request, ): Response {
+    public function userEdit(User $user=null, ManagerRegistry $doctrine, Request $request): Response {
         $new=false;
         if(!$user){
             $new=true;

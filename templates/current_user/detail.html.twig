@@ -1,0 +1,22 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	<h1 class="text-center my-5">Mon Compte</h1>
+	<section class="row p-4 mx-4 justify-content-around border rounded-4 border-dark ">
+		{% if app.user %}
+			<h3>Nom :
+				{{app.user.name}}
+			</h3>
+			<h3>Prenom :
+				{{app.user.firstname}}
+			</h3>
+			<h3>Email :
+				{{app.user.email}}</h3>
+
+			<a href="{{path('app_current_user_edit', {id:app.user.id})}}" class="btn btn-primary mt-2">modifier</a>
+			<a href="{{path('app_user.delete', {id:app.user.id})}}" class="btn btn-danger mt-2">supprimer</a>
+		{% endif %}
+
+
+	</section>
+{% endblock %}
