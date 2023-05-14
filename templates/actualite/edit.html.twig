@@ -1,0 +1,29 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	<section class="p-5">
+		{% for flash_error in app.flashes('verify_email_error') %}
+			<div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+		{% endfor %}
+
+		<h1>Nouvelle articles</h1>
+
+		{{ form_start(formulaire) }}
+		{{ form_row(formulaire.title, {
+            label: "Titre de l'article"
+        }) }}
+		{{ form_row(formulaire.intro, {
+            label: "Introduction"
+        }) }}
+		{{ form_row(formulaire.contenu, {
+            label: "Contenue de l'article"
+        }) }}
+		{{ form_row(formulaire.photo, {
+            label: "image de l'article"
+        }) }}
+
+		<button type="submit" class="btn btn-primary btn-lg mt-3">Editer</button>
+		{{ form_end(formulaire) }}
+
+	</section>
+{% endblock %}
