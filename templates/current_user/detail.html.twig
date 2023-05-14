@@ -4,17 +4,25 @@
 	<h1 class="text-center my-5">Mon Compte</h1>
 	<section class="row p-4 mx-4 justify-content-around border rounded-4 border-dark ">
 		{% if app.user %}
-			<h3>Nom :
-				{{app.user.name}}
-			</h3>
-			<h3>Prenom :
-				{{app.user.firstname}}
-			</h3>
-			<h3>Email :
-				{{app.user.email}}</h3>
+			<section class='d-flex my-3'>
+				<img src={{asset('uploads/articles/' ~ app.user.image )}} class='rounded ' style="height: 200px; width:200px" alt="photo de profile">
+				<div class="mx-4 row justify-content-between">
+					<h3>Nom :
+						{{app.user.name}}
+					</h3>
+					<h3>Prenom :
+						{{app.user.firstname}}
+					</h3>
+					<h3>Email :
+						{{app.user.email}}</h3>
+				</div>
+			</section>
+			<div class='d-flex my-3'>
+				<a href="{{path('app_current_user_edit', {id:app.user.id})}}" class="btn btn-lg btn-primary my-2 col-3">modifier</a>
+				<a href="{{path('app_current_user_delete', {id:app.user.id})}}" class="ms-5 btn btn-lg btn-danger my-2 col-3">supprimer</a>
+			</div>
 
-			<a href="{{path('app_current_user_edit', {id:app.user.id})}}" class="btn btn-primary mt-2">modifier</a>
-			<a href="{{path('app_user.delete', {id:app.user.id})}}" class="btn btn-danger mt-2">supprimer</a>
+
 		{% endif %}
 
 

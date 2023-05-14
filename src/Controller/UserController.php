@@ -9,13 +9,15 @@ use App\Services\GetUserService;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use Symfony\Component\HttpFoundation\File\Exception\FileException;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Http\Attribute\IsGranted;
+use Symfony\Component\String\Slugger\SluggerInterface;
 
-#[Route("/user")]
+#[Route("/user"), IsGranted('ROLE_ADMIN')]
 class UserController extends AbstractController
 {
     public function __construct(private EventDispatcherInterface $dispatcher)
@@ -30,7 +32,7 @@ class UserController extends AbstractController
     }
 
     #[Route('/edit/{id?0}', name:'app_user.edit')]
-    public function userEdit(User $user=null, ManagerRegistry $doctrine, Request $request): Response {
+    public function userEdit(User $user=null, ManagerRegistry $doctrine, SluggerInterface $slugger, Request $request): Response {
         $new=false;
         if(!$user){
             $new=true;
@@ -40,11 +42,26 @@ class UserController extends AbstractController
         $form->remove('createdAt');
         $form->remove('updatedAt');
         $form->handleRequest($request);
+        
         if($form->isSubmitted() && $form->isValid()){
             if($new){
                 $message = ' a personne a bien été ajouter';
             }else{
                 $message = ' a personne a bien été mis à jour';
+            }
+            $photo = $form->get('photo')->getData();
+            if ($photo) {           
+                $originalFilename = pathinfo($photo->getClientOriginalName(), PATHINFO_FILENAME);
+                $safeFilename = $slugger->slug($originalFilename);
+                $newFilename = $safeFilename.'-'.uniqid().'.'.$photo->guessExtension();
+                try {
+                    $photo->move(
+                        $this->getParameter('article_directory'),
+                        $newFilename
+                    );
+                } catch (FileException $e) {
+                }
+                $user->setImage($newFilename);
             }
             $manager=$doctrine->getManager();
             $user = $form->getData();
