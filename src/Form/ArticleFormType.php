@@ -38,6 +38,7 @@ class ArticleFormType extends AbstractType
                     ])
                 ],
             ])
+            ->add('categorie')
             ->add('createdAt')
             ->add('updatedAt')
         ;

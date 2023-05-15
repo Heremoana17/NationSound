@@ -54,6 +54,7 @@ class ActualiteController extends AbstractController
     #[Route('/actualite', name: 'app_actualite')]
     public function index(ManagerRegistry $doctrine): Response
     {
+        
         $repository = $doctrine->getRepository(Article::class);
         $articles = $repository->findAll();
         return $this->render('actualite/index.html.twig', [
