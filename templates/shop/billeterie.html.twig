@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block title %}
+	Billeterie
+{% endblock %}
+{% block body %}
+	<h1 class="text-center my-5">Shop</h1>
+	{% for billet in billets %}
+		{% if billet.designation=="Billet simple" %}
+			<section style='background-image: url(" ../../img/ticket.jpg"); background-repeat: no-repeat; background-position: center; background-size:cover; opacity:0.6; height: 150px; border-radius: 15px;' class='text-white p-4 m-5'>
+				<h2>{{billet.designation}}</h2>
+				<h2>{{billet.prix}}
+					&euro;</h2>
+			</section>
+		{% else %}
+			<section style='background-image: url(" ../../img/ticketVIP.jpg"); background-repeat: no-repeat; background-position: center; background-size:cover; opacity:0.6; height: 150px; border-radius: 15px;' class='text-white p-4 m-5'>
+				<h2>{{billet.designation}}</h2>
+				<h2>{{billet.prix}}
+					&euro;</h2>
+			</section>
+		{% endif %}
+	{% endfor %}
+{% endblock %}

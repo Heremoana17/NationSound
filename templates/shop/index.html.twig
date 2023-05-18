@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Shop!
+{% endblock %}
+
+{% block body %}
+	<h1 class="text-center my-5">Shop</h1>
+	<ul class='d-flex justify-content-around mt-4' style="list-style-type:none">
+		<li>
+			<a href="{{path('app_shop_billeterie')}}" class='text-decoration-none d-flex justify-content-center align-items-center' style='background-image: url(" ../../img/ticket.jpg"); background-repeat: no-repeat; background-position: center; background-size:cover; opacity:0.6; height: 150px; width:300px; border-radius: 15px;'>
+				<h2 class="text-white" style="">Billeterie</h2>
+			</a>
+		</li>
+		<li>
+			<a href="" class='text-decoration-none d-flex justify-content-center align-items-center' style='background-image: url(" ../../img/shopsouvenir.jpg"); background-repeat: no-repeat; background-position: center; background-size:cover; opacity:0.6; height: 150px; width:300px; border-radius: 15px'>
+				<h2 class="text-black" style="opacity:1">Article divers</h2>
+			</a>
+		</li>
+		<li>
+			<a href="" class='text-decoration-none d-flex justify-content-center align-items-center' style='background-image: url(" ../../img/shopvetement.jpg"); background-repeat: no-repeat; background-position: center; background-size:cover; opacity:0.6; height: 150px; width:300px; border-radius: 15px'>
+				<h2 class="text-white" style="opacity:1">Vetement</h2>
+			</a>
+		</li>
+	</ul>
+	<section></section>
+
+{% endblock %}

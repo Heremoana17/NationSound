@@ -4,12 +4,52 @@
 {% endblock %}
 
 {% block body %}
-	<section class="d-flex flex-column justify-content-center align-items-center mt-5">
-		<h1>Page d'actualité</h1>
+	<h1 class="d-flex flex-column justify-content-center align-items-center mt-5">Page d'actualité</h1>
+	<section class="px-4 pt-4 d-flex justify-content-end">
+		<div class="btn-group border rounded me-4">
+			<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+				Filtrer par
+			</button>
+			<ul class="dropdown-menu dropdown-menu-end">
+				<li>
+					<p class='mb-1 ps-2'>Categorie :</p>
+				</li>
+				{% for categorie in categories %}
+					<li>
+						<a href="{{path('app_actualite_categorie', {categorie:categorie.id})}}" class='text-decoration-none'>
+							<button class="dropdown-item" type="button">{{categorie.designation}}</button>
+						</a>
+					</li>
+				{% endfor %}
+				<li>
+					<a href="{{path('app_actualite')}}" class='text-decoration-none'>
+						<button class="dropdown-item" type="button">Tous</button>
+					</a>
+				</li>
+			</ul>
+		</div>
+		{% set currentPath = app.request.attributes.get('categorie') %}
+
+		{# <div class="btn-group border rounded me-4">
+													<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+														Trier par
+													</button>
+													<ul class="dropdown-menu dropdown-menu-end">
+														<li>
+															<p class='mb-1 ps-2'>Ordre :</p>
+														</li>
+														<li>
+															<a class="dropdown-item" href="{{path('app_actualite_categorie', {categorie:currentPath, "ordre":"asc"})}}">Croisant</a>
+														</li>
+														<li>
+															<a class="dropdown-item" href="{{path('app_actualite_categorie', {categorie:currentPath, "ordre":"desc"})}}">Decroisant</a>
+														</li>
+													</ul>
+												</div> #}
 	</section>
-	<section class="row p-4 m-4">
+	<section class="row px-4 mx-4">
 		{% for article in articles %}
-			<article class="border rounded p-3 text-light" style="background-image: url(' ../../uploads/articles/{{article.image}}'); background-repeat: no-repeat; background-position: center; background-size:cover; opacity:0.6">
+			<a href="{{path('app_actualite_details', {id:article.id})}}" class="border rounded p-3 text-light text-decoration-none" style="background-image: url(' ../../uploads/articles/{{article.image}}'); background-repeat: no-repeat; background-position: center; background-size:cover; opacity:0.6">
 				<h2 class="h1" style="opacity:1">{{article.title}}</h2>
 
 				<section class="">
@@ -25,15 +65,12 @@
 					{% endif %}
 				</section>
 
-
 				<section class="mt-3">
 					<h6 class="" style="opacity:1">
 						{{article.intro}}
 					</h6>
 				</section>
-
-			</article>
+			</a>
 		{% endfor %}
-
 	</section>
 {% endblock %}
