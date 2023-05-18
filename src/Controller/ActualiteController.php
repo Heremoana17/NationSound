@@ -5,7 +5,8 @@ namespace App\Controller;
 use App\Entity\Article;
 use App\Entity\Categorie;
 use App\Form\ArticleFormType;
-use App\Services\UploaderService;
+use App\Services\GetUserService;
+use Doctrine\ORM\Mapping\Id;
 use Doctrine\Persistence\ManagerRegistry;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
@@ -31,15 +32,53 @@ class ActualiteController extends AbstractController
             'categories' => $categories,
         ]);
     }
+    #[Route('/mesarticles', name: 'app_actualite_userarticle'), IsGranted('ROLE_ADMIN')]
+    public function articlesUser(ManagerRegistry $doctrine): Response
+    {     
+        $repositoryCategories=$doctrine->getRepository(Categorie::class);
+        $categories = $repositoryCategories->findAll();
+        $userId = $this->getUser()->getId();
+        $repositoryArticle = $doctrine->getRepository(Article::class);
+        $articles = $repositoryArticle->findBy(['createdBy' => $userId],[]);
+        
+        return $this->render('actualite/index.html.twig', [
+            'articles' => $articles,
+            'categories' => $categories,
+        ]);
+    }
+    #[Route('/mesarticles/{categorie}', name: 'app_actualite_userarticle_categorie'), IsGranted('ROLE_ADMIN')]
+    public function articlesCategoriesUser(ManagerRegistry $doctrine, $categorie): Response
+    {     
+        
+        $userId = $this->getUser()->getId();
+        $repositoryArticle = $doctrine->getRepository(Article::class);
+        $articles = $repositoryArticle->findBy(['createdBy' => $userId, 'categorie'=>$categorie]);
+        $repositoryCategories=$doctrine->getRepository(Categorie::class);
+        $categories = $repositoryCategories->findAll();
+        
+        return $this->render('actualite/index.html.twig', [
+            'articles' => $articles,
+            'categories' => $categories,
+        ]);
+    }
 
-    #[Route('/edit', name: 'app_actualite_edit'), IsGranted('ROLE_ADMIN')]
-    public function articleEdit(ManagerRegistry $doctrine, Article $article=null, Request $request, SluggerInterface $slugger, UploaderService $uploaderService): Response
+    #[Route('/edit/{id?0}', name: 'app_actualite_edit'), IsGranted('ROLE_ADMIN')]
+    public function articleEdit(ManagerRegistry $doctrine, Article $article=null, Request $request, SluggerInterface $slugger, GetUserService $getUser, $id): Response
     {
-        $article = new Article();
+        $new = false;
+        if(!$article){
+            $new=true;
+            $article = new Article();
+        }
         $form = $this->createForm(ArticleFormType::class, $article);
         $form->remove('createdAt');
         $form->remove('updatedAt');
         $form->handleRequest($request);
+        if($id==0){
+            $title = "Nouvelle article";
+        }else{
+            $title = "Modifier l'article";
+        }
         if($form->isSubmitted() && $form->isValid()){
             $photo = $form->get('photo')->getData();
             if ($photo) {           
@@ -55,14 +94,19 @@ class ActualiteController extends AbstractController
                 }
                 $article->setImage($newFilename);
             }
-            $article = $form->getData();
+            if($new){
+                $article->setCreatedBy($getUser->getUser());
+            }
             $manager = $doctrine->getManager();
+            $article = $form->getData();
             $manager->persist($article);
             $manager->flush();
             return $this->redirectToRoute('app_actualite');
         }else{
             return $this->render('actualite/edit.html.twig', [
-                'formulaire' => $form
+                'formulaire' => $form,
+                'id'=>$id,
+                'title'=>$title
             ]);
         }
         
@@ -80,7 +124,7 @@ class ActualiteController extends AbstractController
             'article' => $article,
         ]);
     }
-    #[Route('/categorie{categorie?0}', name: 'app_actualite_categorie')]
+    #[Route('/categorie{categorie}', name: 'app_actualite_categorie')]
     public function articleCategorie(ManagerRegistry $doctrine, $categorie): Response
     {
         $repositoryArticle = $doctrine->getRepository(Article::class);
