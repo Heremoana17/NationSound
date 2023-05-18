@@ -37,6 +37,8 @@ class Article
     #[ORM\JoinColumn(nullable: false)]
     private ?Categorie $categorie = null;
 
+    #[ORM\ManyToOne(inversedBy: 'articles')]
+    private ?User $createdBy = null;
 
 
     public function getId(): ?int
@@ -138,5 +140,16 @@ class Article
         return $this;
     }
 
+    public function getCreatedBy(): ?User
+    {
+        return $this->createdBy;
+    }
+
+    public function setCreatedBy(?User $createdBy): self
+    {
+        $this->createdBy = $createdBy;
+
+        return $this;
+    }
 
 }
