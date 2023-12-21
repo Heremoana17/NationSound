@@ -1,0 +1,302 @@
+[
+  {
+    "id": 1,
+    "name": "Pomme",
+    "description": "Claire Isabelle Geo Pommet naît à Décines-Charpieu et grandit à Caluire-et-Cuire, commune française de la métropole de Lyon, plus précisément dans le quartier de Cuire-le-Bas où elle effectue une partie de sa scolarité (école Pierre et Marie Curie).\r\n\r\nElle apprend le solfège à partir de ses six ans, rejoint un chœur d'enfants et d'adolescents de haut niveau et réputé, La Cigale de Lyon, à l'âge de sept ans et découvre le violoncelle à huit ans. Sa mère, professeur des écoles et très pieuse, joue de la flûte traversière ; son père, promoteur immobilier, écoute Michel Polnareff, Serge Reggiani et Charles Aznavour ; et c'est le père d'une amie qui l'initie à la musique folk (Joan Baez et Joni Mitchell) et à la country américaine. Elle fait ses études secondaires à Lyon à la cité scolaire Saint-Exupéry8, dans le quartier de la Croix-Rousse.",
+    "musicLink": "https://www.youtube.com/watch?v=JNZ0gQkJo00",
+    "featuredImage": "artiste1-min-65788d8829879.jpg",
+    "episodes": [
+      {
+        "id": 1,
+        "name": "episode 1",
+        "hour": "1970-01-01T05:00:00+00:00"
+      },
+      {
+        "id": 17,
+        "name": "Pomme",
+        "hour": "1970-01-01T19:00:00+00:00"
+      },
+      {
+        "id": 22,
+        "name": "episode 1",
+        "hour": "1970-01-01T10:00:00+00:00"
+      },
+      {
+        "id": 30,
+        "name": "episode 1",
+        "hour": "1970-01-01T08:00:00+00:00"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 2,
+    "name": "Poire",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente repellat magni id, voluptatem velit accusantium rerum omnis sunt sequi illo libero eum. Libero ullam illo sit facere harum nihil culpa iure et officiis eum pariatur quia hic dolores in animi, saepe rem id, nulla consequuntur modi exercitationem. Repellat, assumenda animi.",
+    "musicLink": "https://www.youtube.com/watch?v=l98w9OSKVNA",
+    "featuredImage": "artiste2-min-65788d8131627.jpg",
+    "episodes": [
+      {
+        "id": 2,
+        "name": "episode 2",
+        "hour": "1970-01-01T08:00:00+00:00"
+      },
+      {
+        "id": 10,
+        "name": "Poire",
+        "hour": "1970-01-01T10:00:00+00:00"
+      },
+      {
+        "id": 18,
+        "name": "Poire",
+        "hour": "1970-01-01T22:00:00+00:00"
+      },
+      {
+        "id": 20,
+        "name": "episode 3",
+        "hour": "1970-01-01T19:00:00+00:00"
+      },
+      {
+        "id": 31,
+        "name": "episode 2",
+        "hour": "1970-01-01T12:00:00+00:00"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 3,
+    "name": "Pink",
+    "description": "Alecia Moore, dite Pink (stylisé Pink), née le 8 septembre 1979 à Doylestown, en Pennsylvanie, est une chanteuse et actrice américaine. En 2014, elle compte plus de 60 millions d'albums et 75 millions de singles vendus, ainsi que trois Grammy Awards.\r\n\r\nElle se fait connaître en 2000 avec la sortie de son premier album studio Can't Take Me Home. En 2001, elle reprend avec Christina Aguilera, Lil' Kim et Mýa la chanson Lady Marmalade pour la bande originale du film Moulin rouge. La chanson permet de faire connaitre la chanteuse à un plus grand public. Elle sort très vite son deuxième album studio Missundaztood avec entre autres les singles Get the Party Started et Family Portrait. Troisième album studio de Pink, Try This (2003), lui a valu le Grammy Award de la meilleure performance vocale de rock féminin pour le single Trouble. Elle est revenue au sommet des palmarès des disques avec ses quatrième et cinquième albums studio, I'm Not Dead (2006) et Funhouse (2008). Le sixième album studio de Pink, The Truth About Love (2012), est son premier album à faire ses débuts au sommet du Billboard 200chart et a engendré son quatrième single numéro un, Just Give Me a Reason. En 2014, Pink enregistre un album collaboratif, rose ave., avec le musicien canadien Dallas Green dans un duo de musique folk nommé You+Me. Son septième album studio, Beautiful Trauma (2017), est devenu le troisième album le plus vendu de l'année et a connu le succès de son single What About Us. Elle sort son huitième album studio, Hurts 2B Human en 2019. Quatre ans plus tard, le 17 février 2023, elle sort son neuvième album studio, intitulé TRUSTFALL.\r\n\r\nP!NK reçoit une étoile sur le Hollywood Walk of Fame le 5 février 2019.",
+    "musicLink": "https://www.youtube.com/watch?v=D2KE2a5qo0g",
+    "featuredImage": "pink-65788d75aa70c.jpg",
+    "episodes": [
+      {
+        "id": 3,
+        "name": "episode 3",
+        "hour": "1970-01-01T10:00:00+00:00"
+      },
+      {
+        "id": 8,
+        "name": "episode 8",
+        "hour": "1970-01-01T06:00:00+00:00"
+      },
+      {
+        "id": 23,
+        "name": "episode 4",
+        "hour": "1970-01-01T14:00:00+00:00"
+      },
+      {
+        "id": 27,
+        "name": "episode 2",
+        "hour": "1970-01-01T05:00:00+00:00"
+      },
+      {
+        "id": 32,
+        "name": "episode 3",
+        "hour": "1970-01-01T16:00:00+00:00"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 4,
+    "name": "Blue",
+    "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente repellat magni id, voluptatem velit accusantium rerum omnis sunt sequi illo libero eum. Libero ullam illo sit facere harum nihil culpa iure et officiis eum pariatur quia hic dolores in animi, saepe rem id, nulla consequuntur modi exercitationem. Repellat, assumenda animi.",
+    "musicLink": "https://www.youtube.com/watch?v=eXqHENofoYM",
+    "featuredImage": "artiste3-min-65788d6d6aa76.jpg",
+    "episodes": [
+      {
+        "id": 4,
+        "name": "episode 4",
+        "hour": "1970-01-01T12:00:00+00:00"
+      },
+      {
+        "id": 15,
+        "name": "Blue",
+        "hour": "1970-01-01T12:00:00+00:00"
+      },
+      {
+        "id": 25,
+        "name": "episode 3",
+        "hour": "1970-01-01T23:00:00+00:00"
+      },
+      {
+        "id": 33,
+        "name": "episode 4",
+        "hour": "1970-01-01T20:00:00+00:00"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 5,
+    "name": "Loi",
+    "description": "Loi est apparue pour la première fois au concours scolaire Strong School , où elle a remporté la première place dans le Bade-Wurtemberg et la deuxième place en Allemagne avec une chanson auto-écrite. En 2017, elle est apparue en tant que candidate à l'émission The Voice Kids. Là, elle a atteint la finale. Pendant l'obtention de son diplôme d'études secondaires, elle a commencé à expérimenter TikTok pour compenser et a publié des chansons sur sa chaîne, dont une recette de crêpes chantée . Ceci et une reprise de Blinding Lights de The Weeknd ont fait connaître sa chaîne et lui ont permis de compter plus de 163 000 abonnés et environ 1,3 million de likes en 2021. Son pseudonyme est basé sur son précédent surnom \"Léonie Lionheart\". Il est basé sur la forme poétique « leu » pour lion. Elle est sous contrat avec Warner Music Central Europe depuis 2021 .\r\n\r\nLe 2 avril 2021, elle sort son premier single I Follow , qui devient la chanson titre du film Ostwind - The Great Orkan. D'autres singles ont suivi. Sa percée est venue avec le single Gold , sorti en 2022 , qui a atteint la 35e place des charts allemands et la 33e place des charts autrichiens.",
+    "musicLink": "https://www.youtube.com/watch?v=0rMwaEK0jn0&list=RDD2KE2a5qo0g&index=3",
+    "featuredImage": "Loi-65788d64e8264.jpg",
+    "episodes": [
+      {
+        "id": 16,
+        "name": "Loi",
+        "hour": "1970-01-01T18:00:00+00:00"
+      },
+      {
+        "id": 34,
+        "name": "episode 5",
+        "hour": "1970-01-01T23:00:00+00:00"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 7,
+    "name": "Lewis Capaldi",
+    "description": "Lewis Capaldi est un chanteur et musicien auteur-compositeur-interprète britannique, né le 7 octobre 1996 à Glasgow.\r\n\r\n      En 2018, il remporte plusieurs succès musicaux. En 2019, il se classe premier des charts britanniques, puis des charts américains, avec son single Someone You Loved qui est écouté plus de 2,8 milliards de fois sur Spotify à ce jour.\r\n      \r\n      Son premier album Divinely Uninspired to a Hellish Extent est sorti le 17 mai 2019, qui s'est classé premier des ventes d'albums au Royaume-Uni et en Irlande.\r\n      \r\n      Son premier single Bruises est sorti le 31 mars 2017. Il atteint rapidement les 28 millions d'écoutes sur Spotify dans le monde, ce qui fait de lui l'artiste sans label ayant atteint le plus rapidement les 25 millions d'écoutes sur la plate-forme. Peu de temps après, il signe un contrat avec Virgin EMI Records et Capitol Records. Il sort son premier EP Bloom, le 20 octobre 2017, sur lequel il a travaillé avec le producteur Malay, collaborateur de Frank Ocean.",
+    "musicLink": "https://www.youtube.com/watch?v=nBZlrbrBO1I&list=RDD2KE2a5qo0g&index=11",
+    "featuredImage": "LewisCapaldi-65788d5cda5d9.jpg",
+    "episodes": [
+      {
+        "id": 6,
+        "name": "episode 6",
+        "hour": "1970-01-01T16:00:00+00:00"
+      },
+      {
+        "id": 14,
+        "name": "episode 6",
+        "hour": "1970-01-01T07:00:00+00:00"
+      },
+      {
+        "id": 19,
+        "name": "episode 5",
+        "hour": "1970-01-01T16:00:00+00:00"
+      },
+      {
+        "id": 24,
+        "name": "episode 3",
+        "hour": "1970-01-01T18:00:00+00:00"
+      },
+      {
+        "id": 35,
+        "name": "episode 1",
+        "hour": "1970-01-01T10:00:00+00:00"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 8,
+    "name": "Stromae",
+    "description": "Stromae, de son vrai nom Paul Van Haver, est un artiste belge renommé, né le 12 mars 1985 à Bruxelles. Il est principalement connu en tant que chanteur, auteur-compositeur, producteur et styliste. Son pseudonyme, \"Stromae\", est une inversion des syllabes de \"maestro\", reflétant son talent musical et artistique.\r\n\r\nStromae a acquis une notoriété internationale avec la sortie de son premier album studio, \"Cheese\", en 2010, qui comprenait des titres à succès tels que \"Alors on danse\". Sa musique est souvent décrite comme une fusion de genres, mélangeant la musique électronique, la chanson française, et des éléments de hip-hop. Ses textes abordent des thèmes sociaux et personnels, tout en étant portés par des mélodies accrocheuses.\r\n\r\nOutre ses compétences musicales, Stromae est également reconnu pour son sens du style distinctif. Il a lancé sa propre ligne de vêtements appelée Mosaert, reflétant son esthétique unique et innovante. Son look excentrique et son engagement dans le domaine de la mode ont contribué à renforcer son statut d'icône créative.\r\n\r\nEn plus de son succès musical, Stromae a été salué pour ses performances scéniques énergiques et captivantes. Il a conquis un public varié grâce à sa personnalité charismatique et son talent polyvalent. Bien qu'il ait fait une pause dans sa carrière musicale après la sortie de son deuxième album, \"Racine Carrée\", en 2013, Stromae continue d'avoir une influence significative dans l'industrie musicale et artistique.",
+    "musicLink": "https://www.youtube.com/watch?v=4T1814tHqYs",
+    "featuredImage": "stromae-658045d3a890f.jpg",
+    "episodes": [
+      {
+        "id": 9,
+        "name": "episode 2",
+        "hour": "1970-01-01T10:00:00+00:00"
+      },
+      {
+        "id": 28,
+        "name": "episode 3",
+        "hour": "1970-01-01T11:00:00+00:00"
+      },
+      {
+        "id": 36,
+        "name": "episode 2",
+        "hour": "1970-01-01T14:00:00+00:00"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 9,
+    "name": "Florent Pagny",
+    "description": "Florent Pagny est un chanteur et acteur français né le 6 novembre 1961 à Chalon-sur-Saône. Il est l'une des figures emblématiques de la scène musicale française, ayant connu un succès durable au cours de sa carrière.\r\n\r\nDès le début des années 1980, Florent Pagny a attiré l'attention du public avec sa voix puissante et sa présence charismatique sur scène. Il s'est fait connaître avec des titres variés, explorant différents genres musicaux, tels que la variété française, la pop et le rock.\r\n\r\nL'un des albums qui a marqué le début de sa carrière est \"Merci\", sorti en 1990, qui a été suivi par d'autres succès comme \"Savoir aimer\" en 1997. Sa capacité à interpréter des chansons touchantes et émotionnelles a contribué à son statut de chanteur populaire auprès d'un large public.\r\n\r\nAu fil des ans, Florent Pagny a continué à évoluer artistiquement, expérimentant avec différents styles musicaux et collaborant avec divers artistes. Il a également participé à des émissions de télévision liées à la musique, contribuant ainsi à sa renommée.\r\n\r\nOutre sa carrière musicale, Florent Pagny a également joué dans quelques films et téléfilms. Son engagement dans des projets caritatifs et son authenticité en tant qu'artiste ont contribué à forger une image appré",
+    "musicLink": "https://www.youtube.com/watch?v=okUcCR6Wtec",
+    "featuredImage": "florentPagny-min-65805b7a6a33e.jpg",
+    "episodes": [
+      {
+        "id": 12,
+        "name": "Florent Pagny",
+        "hour": "1970-01-01T20:00:00+00:00"
+      },
+      {
+        "id": 37,
+        "name": "episode 3",
+        "hour": "1970-01-01T17:00:00+00:00"
+      },
+      {
+        "id": 42,
+        "name": "episode 3",
+        "hour": "1970-01-01T21:00:00+00:00"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 10,
+    "name": "Indochine",
+    "description": "Indochine est un groupe de rock français emblématique formé en 1981. Il est souvent considéré comme l'un des groupes les plus influents de la scène musicale française. Le nom du groupe fait référence à l'Indochine française, et son style musical a évolué au fil des décennies, incorporant des éléments de new wave, de rock, de pop et d'électro.\r\n\r\nLe leader et chanteur principal du groupe est Nicola Sirkis, qui, avec le guitariste Dominique Nicolas, a formé le noyau initial d'Indochine. Au fil des années, le groupe a connu des changements de membres, mais la présence constante de Nicola Sirkis a été un élément clé de la continuité de la formation.\r\n\r\nIndochine a acquis une popularité significative au début des années 1980 avec des albums tels que \"L'Aventurier\" (1982) et \"3\" (1985). Leur musique, souvent caractérisée par des mélodies entraînantes et des paroles poétiques, a conquis un large public en France et au-delà.\r\n\r\nL'album \"Paradize\" (2002) a marqué un tournant majeur dans la carrière d'Indochine, les propulsant à nouveau sur le devant de la scène musicale avec des titres à succès comme \"J'ai demandé à la lune\" et \"Mao Boy\". Depuis lors, le groupe a continué à produire de la musique acclamée, explorant divers styles et restant une force créative dans l'industrie musicale française.\r\n\r\nIndochine est également réputé pour ses performances scéniques spectaculaires. Le groupe a fidèlement rassemblé une base de fans dévoués tout au long de sa carrière et a réussi à rester pertinent et innovant, démontrant sa capacité à évoluer avec les tendances musicales tout en préservant son identité distincte.",
+    "musicLink": "https://www.youtube.com/watch?v=f3Pw36EFRV0",
+    "featuredImage": "Indochine-min-65805c075369e.jpg",
+    "episodes": [
+      {
+        "id": 13,
+        "name": "Indochine",
+        "hour": "1970-01-01T22:00:00+00:00"
+      },
+      {
+        "id": 29,
+        "name": "episode 5",
+        "hour": "1970-01-01T17:00:00+00:00"
+      },
+      {
+        "id": 39,
+        "name": "episode 5",
+        "hour": "1970-01-01T22:00:00+00:00"
+      },
+      {
+        "id": 41,
+        "name": "episode 2",
+        "hour": "1970-01-01T22:00:00+00:00"
+      }
+    ],
+    "links": []
+  },
+  {
+    "id": 11,
+    "name": "Maroon5",
+    "description": "Maroon 5 est un groupe de musique pop fondé à Los Angeles en 1994. À ses débuts, le groupe portait le nom de \"Kara's Flowers\" et était composé de membres tels que Adam Levine (chant et guitare), Jesse Carmichael (claviers et guitare), Mickey Madden (basse) et Ryan Dusick (batterie). Plus tard, ils ont recruté le guitariste James Valentine et changé leur nom pour devenir Maroon 5.\r\n\r\nLeur premier album, \"Songs About Jane\" (2002), a été un énorme succès avec des singles comme \"Harder to Breathe\", \"This Love\" et \"She Will Be Loved\". Le style de Maroon 5 est souvent caractérisé par une fusion de pop, de rock et de R&B, avec des mélodies accrocheuses et la voix distinctive d'Adam Levine.\r\n\r\nAu fil des années, Maroon 5 a continué de produire des albums à succès, tels que \"It Won't Be Soon Before Long\" (2007), \"Hands All Over\" (2010), \"Overexposed\" (2012), et \"Red Pill Blues\" (2017). Leur musique est connue pour son accessibilité pop, ses paroles souvent centrées sur les relations, et son mélange éclectique de genres.\r\n\r\nOutre la musique, Adam Levine, en tant que leader du groupe, est également devenu célèbre pour sa participation en tant que coach dans l'émission de télé-réalité \"The Voice\". Maroon 5 continue d'être un acteur majeur de l'industrie musicale, avec une base de fans mondiale et une longévité artistique remarquable.",
+    "musicLink": "https://www.youtube.com/watch?v=09R8_2nJtjg",
+    "featuredImage": "maroon-5-min-65805c5d05bb5.jpg",
+    "episodes": [
+      {
+        "id": 11,
+        "name": "Maroon5",
+        "hour": "1970-01-01T14:00:00+00:00"
+      },
+      {
+        "id": 21,
+        "name": "episode 1",
+        "hour": "1970-01-01T21:00:00+00:00"
+      },
+      {
+        "id": 26,
+        "name": "episode 7",
+        "hour": "1970-01-01T23:00:00+00:00"
+      },
+      {
+        "id": 38,
+        "name": "episode 4",
+        "hour": "1970-01-01T19:00:00+00:00"
+      },
+      {
+        "id": 40,
+        "name": "episode 1",
+        "hour": "1970-01-01T20:00:00+00:00"
+      }
+    ],
+    "links": []
+  }
+]

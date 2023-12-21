@@ -1,0 +1,21 @@
+[
+    {
+        "id": 0,
+        "name" : "Coca-cola", 
+        "figure" : "src/Assets/Image/Sponsors/Figure/cocacolaFigure.jpg",
+        "logo" : "src/Assets/Image/Sponsors/Logo/cocacolalogo.jpg"
+    },
+    {
+        "id": 1,
+        "name" : "Ville de paris", 
+        "figure" : "src/Assets/Image/Sponsors/Figure/paris.jpg",
+        "logo" : "src/Assets/Image/Sponsors/Logo/nvlogoparis.jpg"
+    },
+    {
+        "id": 2,
+        "name" : "Instagram", 
+        "figure" : "src/Assets/Image/Sponsors/Figure/leaves_plant_green_136320_1024x768.jpg",
+        "logo" : "src/Assets/Image/Sponsors/Logo/instagram_logo.png"
+    }
+
+]
